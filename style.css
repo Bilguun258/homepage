@@ -1,14 +1,16 @@
 body{
     text-align: center;
-    background-color: #89ad90;
+    background-color: #54ab97;
     padding-top: 0px;
     margin: auto;
     box-sizing: border-box;
 }
 h1{
+    font-family:sans-serif;
     color: #000;
     padding: 50px;
 }
+
 /*
 =================================================
 SEARCH
@@ -38,32 +40,20 @@ display:inline-block;
    color:#FFF;
 }
 
-
-var showCalc = false;
-function showCalculator(){
-   if (showCalc == false){
-       document.getElementById("calc").style.opacity = 1;
-       showCalc = true;
-   }
-   else if (showCalc == true){
-       document.getElementById("calc").style.opacity = 0;
-       showCalc = false;
-   }
-}
-
-//CLOCK SCRIPT
-function startTime() {
- const today = new Date();
- let h = today.getHours();
- let m = today.getMinutes();
- let s = today.getSeconds();
- m = checkTime(m);
- s = checkTime(s);
- document.getElementById('clock').innerHTML =  h + ":" + m + ":" + s;
- setTimeout(startTime, 1000);
-}
-
-function checkTime(i) {
- if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
- return i;
+/*
+=================================================
+POST-IT NOTE (IN CSS)
+=================================================
+*/
+#note{
+ width:250px;
+ height:250px;
+ resize: none;
+ background:#F3F19D;
+ padding:15px;
+ border:none;
+ position: absolute;
+ bottom:50px;
+ left:50px;
+ font-family:sans-serif;
 }

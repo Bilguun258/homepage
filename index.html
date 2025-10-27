@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,20 +12,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
+    
     <body>
 
         <a class="weatherwidget-io" href="https://forecast7.com/en/42d07n87d79/glenview/" data-label_1="GLENVIEW" data-label_2="WEATHER" >GLENVIEW WEATHER</a>
         <script>
             !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-        </script>s
-
-        <!-- Make a file called myScripts.js in parent directory -->
-<script src="myScripts.js"></script>
-</body>
-
-<body onload="startTime()">
-
-<div id="clock"></div>
+        </script>
 
 
         <h1>Hi Bilguun</h1>
@@ -40,18 +33,19 @@
             <input type="text" name="q" placeholder="search..." class="search-bar"/>
             <input type="submit" value="GO" class="submit-button">
         </form>
+        
+        <textarea placeholder="Write a note..." id="note" 
+        onkeyup="autoSave()"></textarea>
 
-        <!-- CALCULATOR -->
+        <body onload="startTime()">
 
-        <!-- May set custom colors at calculator-1.com/widgets/ --> 
+        <div id="clock">
+
+        </div>
+
+        
 
 
-            <!-- Make a file called myScripts.js in parent directory -->
-            <script src="myScripts.js"></script>
-            </body>
-
-         <iframe width="219" height="302" src="http://calculator-1.com/outdoor/?f=666666&r=666666" scrolling="no" frameborder="0"></iframe><br /><a href="https://calculator-1.com/"></a>
-         
 
         
         <script src="myScripts.js" async defer></script>
